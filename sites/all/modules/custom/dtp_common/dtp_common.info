@@ -1,0 +1,4 @@
+name = Custom Common Functions
+description = Site custom functions.
+package = Custom
+core = 7.x

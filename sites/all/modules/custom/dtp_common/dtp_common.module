@@ -1,0 +1,78 @@
+<?php
+
+/**
+ * @file
+ * This module holds custom common functions.
+ */
+
+/**
+ * Implements hook_form_alter().
+ */
+function dtp_common_form_alter(&$form, &$form_state, $form_id) {
+  if ($form['#id'] == 'views-exposed-form-portfolio-home-portfolio') {
+    $form['type']['#options']['All'] = 'Toate';
+  }
+}
+
+/**
+ * Implements hook_form_contact_site_form_alter().
+ * by implementing hook_form_FORM_ID_alter().
+ */
+function dtp_form_contact_site_form_alter(&$form, &$form_state, $form_id) {
+
+  $form['name']['#title'] = t('Numele');
+  $form['mail']['#title'] = t('Email');
+
+  $form['subject']['#required'] = FALSE;
+  hide($form['subject']);
+
+  $form['message']['#title'] = t('Mesaj');
+
+  $form['actions']['submit']['#value'] = t('Trimite');
+
+  hide($form['copy']);
+}
+
+function dtp_common_views_pre_render(&$view) {
+  if ($view->name == 'about' && $view->current_display == 'home_about') {
+
+    $current_view_clone = _dtp_common_get_simple_view('about', 'home_about_result', $args = array());
+
+    if (!empty($current_view_clone)) {
+      $titles = array_map("_dtp_get_obj_title", $current_view_clone);
+
+      drupal_add_js(drupal_get_path('module', 'dtp_common') . '/js/scripts.js');
+      drupal_add_js(array('aboutPager' => array('titles' => $titles)), 'setting');
+    }
+  }
+}
+
+function _dtp_get_obj_title($array) {
+  return isset($array->node_title) ? $array->node_title : '';
+}
+
+/**
+ * Get an simple view.
+ *
+ * @param string $view_name
+ * @param string $display_name
+ * @return array
+ */
+function _dtp_common_get_simple_view($view_name, $display_name, $args = array()) {
+  $view = views_get_view($view_name);
+  // Ensure view exists.
+  if (!$view)
+    return;
+  $view->set_display($display_name);
+  if (!empty($args)) {
+    $view->set_arguments($args);
+  }
+  //$view->is_cacheable = FALSE;
+  $view->pre_execute();
+  $view->execute();
+  return $view->result;
+
+  $out['count'] = count($view->result);
+  $out['content'] = $view->render();
+  return $out;
+}
