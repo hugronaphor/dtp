@@ -2588,33 +2588,31 @@ body {
 #custom-front-panel .view-display-id-home_portfolio .view-content .superbox-show {
   position: relative;
   background: #333;
-  box-shadow: inset 0 1px 5px #111;
-  -webkit-box-shadow: inset 0 1px 5px #111;
-  -moz-box-shadow: inset 0 1px 5px #111;
   width: 100%;
   float: left;
   display: none;
+  margin: -3px 0 0 -3px;
 }
-/* line 845, ../sass/styles.scss */
+/* line 843, ../sass/styles.scss */
 #custom-front-panel .view-display-id-home_portfolio .view-content .superbox-show .superbox-inner {
   padding: 25px;
 }
-/* line 849, ../sass/styles.scss */
+/* line 847, ../sass/styles.scss */
 #custom-front-panel .view-display-id-home_portfolio .view-content .superbox-current-img {
   max-width: 100%;
   padding: 0 20px 0 0;
   display: block;
   float: left;
 }
-/* line 855, ../sass/styles.scss */
+/* line 853, ../sass/styles.scss */
 #custom-front-panel .view-display-id-home_portfolio .view-content .superbox-img:hover {
   opacity: 0.8;
 }
-/* line 858, ../sass/styles.scss */
+/* line 856, ../sass/styles.scss */
 #custom-front-panel .view-display-id-home_portfolio .view-content .superbox-float {
   float: left;
 }
-/* line 861, ../sass/styles.scss */
+/* line 859, ../sass/styles.scss */
 #custom-front-panel .view-display-id-home_portfolio .view-content .superbox-close {
   opacity: 0.7;
   cursor: pointer;
@@ -2626,26 +2624,27 @@ body {
   height: 35px;
   z-index: 99999;
 }
-/* line 872, ../sass/styles.scss */
+/* line 870, ../sass/styles.scss */
 #custom-front-panel .view-display-id-home_portfolio .view-content .superbox-close:hover {
   opacity: 1;
 }
-/* line 876, ../sass/styles.scss */
+/* line 874, ../sass/styles.scss */
 #custom-front-panel .view-display-id-home_portfolio .view-content .superbox-list {
   width: 210px;
+  margin: -3px;
 }
-/* line 912, ../sass/styles.scss */
+/* line 911, ../sass/styles.scss */
 #custom-front-panel .tabs-slider {
   position: relative;
 }
-/* line 916, ../sass/styles.scss */
+/* line 915, ../sass/styles.scss */
 #custom-front-panel .tabs-slider-container {
   height: 36px;
   overflow: hidden;
   margin: 35px 0;
   text-align: center;
 }
-/* line 923, ../sass/styles.scss */
+/* line 922, ../sass/styles.scss */
 #custom-front-panel .tabs-slider-item {
   font-size: 18px;
   font-family: 'ss', Arial, sans-serif;
@@ -2656,27 +2655,27 @@ body {
   cursor: pointer;
   display: inline-block;
 }
-/* line 932, ../sass/styles.scss */
+/* line 931, ../sass/styles.scss */
 #custom-front-panel .tabs-slider-item.active {
   padding: 0 15px;
   font-family: 'ss_bold', Arial, sans-serif;
   background: #dad7cb;
 }
-/* line 937, ../sass/styles.scss */
+/* line 936, ../sass/styles.scss */
 #custom-front-panel .tabs-slider-item:first-child {
   margin-left: 0;
 }
-/* line 942, ../sass/styles.scss */
+/* line 941, ../sass/styles.scss */
 #custom-front-panel .view-display-id-home_portfolio .views-exposed-form {
   display: none;
 }
 
-/* line 948, ../sass/styles.scss */
+/* line 947, ../sass/styles.scss */
 .layout-top-text {
   text-align: center;
 }
 
-/* line 955, ../sass/styles.scss */
+/* line 954, ../sass/styles.scss */
 .view-display-id-home_machetare .item-list > ul {
   text-align: center;
   padding: 0;
@@ -2685,7 +2684,7 @@ body {
   margin: 20px 0 0 0;
   width: 100%;
 }
-/* line 962, ../sass/styles.scss */
+/* line 961, ../sass/styles.scss */
 .view-display-id-home_machetare .item-list > ul li {
   padding: 0px;
   width: 131px;
@@ -2694,16 +2693,16 @@ body {
   list-style-type: none;
   vertical-align: top;
 }
-/* line 964, ../sass/styles.scss */
+/* line 963, ../sass/styles.scss */
 .view-display-id-home_machetare .item-list > ul li div {
   padding: 0;
 }
-/* line 975, ../sass/styles.scss */
+/* line 974, ../sass/styles.scss */
 .view-display-id-home_machetare .item-list > ul li .views-field-title {
   text-align: center;
 }
 
-/* line 990, ../sass/styles.scss */
+/* line 989, ../sass/styles.scss */
 .element {
   position: relative;
   top: 50%;
