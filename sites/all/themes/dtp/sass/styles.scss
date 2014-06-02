@@ -30,6 +30,10 @@ $general-gray-bg: rgb(245, 245, 245);
 $general-body-bg: #fbfcfc;
 $news-content-padding: 10px;
 
+body {
+  font-family: 'Raleway', Fallback, sans-serif;
+}
+
 .admin-menu-icon > a {
   width: 15px;
 }
