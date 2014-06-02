@@ -40,11 +40,12 @@
 
   Drupal.behaviors.scrollMenu = {
     attach: function(context, settings) {
-
+      
       var topBarHeight = $('ul.menu').height();
 
-      $('a[href*=#]:not([href=#])').click(function(event) {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      $('ul.menu a[href*=#]:not([href=#])').click(function(event) {        
+        
+        //if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
           var target = $(this.hash);
           target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
           if (target.length) {
@@ -53,7 +54,7 @@
             }, 800);
             event.preventDefault();
           }
-        }
+        //}
       });
     }
   };
