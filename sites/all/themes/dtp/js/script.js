@@ -124,9 +124,14 @@
         }).get());
 
         var iconsPath = thisCaroselId + " .people-social-icons";
+        var carouselWeight = $(thisCaroselId + " li").eq(0).width();
         var iconsHeight = $(iconsPath).length ? $(iconsPath).height() : 0;
-        var finalHeight = maxHeight + iconsHeight + 10;
+        var iconsWidth = $(iconsPath).length ? $(iconsPath).width() : 0;
+        var finalHeight = maxHeight + iconsHeight + 10 + 10;
         $(thisCaroselId + " li.jcarousel-item").css("height", finalHeight);
+        
+        // To do in each
+        //$(iconsPath).css("margin-left", '20px');
 
         var prevBtnHeight = $(thisCaroselId + ' a.jcarousel-prev').height();
         // Assume that is the same.

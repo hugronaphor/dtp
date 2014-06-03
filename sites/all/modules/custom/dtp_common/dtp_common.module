@@ -76,3 +76,13 @@ function _dtp_common_get_simple_view($view_name, $display_name, $args = array())
   $out['content'] = $view->render();
   return $out;
 }
+
+/**
+ * Implements hook_wysiwyg_editor_settings_alter().
+ */
+function dtp_common_wysiwyg_editor_settings_alter(&$settings, $context) {
+  // Allow media (module) tags.
+  if ($context['profile']->editor == 'ckeditor') {
+    $settings['allowedContent'] = TRUE;
+  }
+}
