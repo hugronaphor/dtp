@@ -17,14 +17,14 @@
 
     return this.each(function() {
 
-      var currentContent = $(this).find('.additional-data').html();
-      superbox.find('.portfolio-content').append(currentContent);
-
       $('.superbox-list').click(function() {
 
         var currentimg = $(this).find('.superbox-img');
         var imgData = currentimg.data('img');
         superboximg.attr('src', imgData);
+
+        var currentContent = $(this).find('.additional-data').html();
+        superbox.find('.portfolio-content').empty().append(currentContent);
 
         if ($('.superbox-current-img').css('opacity') == 0) {
           $('.superbox-current-img').animate({opacity: 1});
@@ -32,23 +32,9 @@
 
         if ($(this).next().hasClass('superbox-show')) {
           superbox.slideToggle();
-
-          if ($(this).hasClass('hover2')) {
-            $(this).removeClass('hover2');
-          } else {
-            $(this).addClass('hover2');
-          }
-
         } else {
           superbox.insertAfter(this).css('display', 'block');
           //superbox.slideToggle();
-
-          if ($(this).hasClass('hover2')) {
-            $(this).removeClass('hover2');
-          } else {
-            $(this).addClass('hover2');
-          }
-
         }
 
         $('html, body').animate({
@@ -70,7 +56,7 @@
   Drupal.behaviors.mPortfolio = {
     attach: function(context, settings) {
 
-      $('.view-display-id-home_portfolio .view-content').SuperBox('lele');
+      $('.view-display-id-home_portfolio .view-content').SuperBox();
 
     }
   };

@@ -62,6 +62,14 @@ body {
   display:none;
 }
 
+ul.pager {
+  li {
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
 #custom-front-panel {
   width: 100%;
 
@@ -285,13 +293,11 @@ body {
       h2 {
         text-align: center;
       }
-
     }
 
     .people-top-content {
       text-align: center;
     }
-
 
     .view-display-id-home_people {
 
@@ -310,6 +316,7 @@ body {
           -moz-box-sizing: border-box;
           -webkit-box-sizing: border-box;
           box-sizing: border-box;
+          position:relative;
 
           img {
             width: 100%;
@@ -367,6 +374,7 @@ body {
               list-style:none;
               margin: 0;
               padding: 0;
+              width:100%;
               li {
                 display: inline;
               }
@@ -418,6 +426,7 @@ body {
         ul {
           font-size: 0;
           text-align: center;
+          padding:20px 0 30px 0;
           .views-row {
             color:#fff;
             display: inline-block;
@@ -451,10 +460,33 @@ body {
   .contact-form {
     margin: 0 0 20px 0;
     text-align: center;
-    input, .form-textarea-wrapper {
+    input:not([type="submit"]), .form-textarea-wrapper {
       width: 50%;
       margin: 0 auto;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -khtml-border-radius: 10px;
+      border-radius: 10px;
+      border: none;
+      padding: 10px 21px;
+      color: #808080;
     }
+    .form-textarea-wrapper {
+      textarea {
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -khtml-border-radius: 10px;
+        border-radius: 10px;
+        border: none;
+        padding: 10px 21px;
+        color: #808080;
+      }
+    }
+
+    input:focus, textarea:focus {
+      outline-width: 0;
+    }
+
     input[type="submit"] {
       width: 100px;
       border: 0;
@@ -919,7 +951,9 @@ body {
 
   }
 
-
+  .view-empty {
+    text-align: center;
+  }
 
 
   /* Tab Slider. */
@@ -944,10 +978,12 @@ body {
     margin: 0 8px;
     cursor: pointer;
     display: inline-block;
+
     &.active {
       padding: 0 15px;
       font-family: 'ss_bold', Arial, sans-serif;
-      background: #dad7cb;
+      background: #00AEEF;
+      color:white;
     }
     &:first-child {
       margin-left: 0;
