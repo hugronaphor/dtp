@@ -50,6 +50,17 @@
 
     }
   };
+  
+    Drupal.behaviors.removeAboutViesLastPager = {
+    attach: function(context, settings) {
+      $('.pane-views-about-home-about .pager .pager-next').remove();
+      $('.pane-views-about-home-about .pager .pager-last').remove();
+      $('.pane-views-about-home-about .pager li').last().addClass('last');
+    }
+  };
+  
+  
+  
 
   Drupal.behaviors.customizePlaceholders = {
     attach: function(context, settings) {
