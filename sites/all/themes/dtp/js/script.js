@@ -45,8 +45,8 @@
               middleSloganWidth = $('.middle-slogan').width(),
               additionalElWidth = (middleSloganWidth - centerSpanWidth - 12) / 2;
 
-      $('.middle-slogan span#first').width(additionalElWidth);
-      $('.middle-slogan span#third').width(additionalElWidth);
+      $('.middle-slogan span#first').empty().width(additionalElWidth);
+      $('.middle-slogan span#third').empty().width(additionalElWidth);
 
     }
   };
@@ -129,9 +129,6 @@
         var iconsWidth = $(iconsPath).length ? $(iconsPath).width() : 0;
         var finalHeight = maxHeight + iconsHeight + 10 + 10;
         $(thisCaroselId + " li.jcarousel-item").css("height", finalHeight);
-        
-        // To do in each
-        //$(iconsPath).css("margin-left", '20px');
 
         var prevBtnHeight = $(thisCaroselId + ' a.jcarousel-prev').height();
         // Assume that is the same.
