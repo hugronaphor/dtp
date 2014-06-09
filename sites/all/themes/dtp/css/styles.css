@@ -2070,11 +2070,6 @@ ul.pager li a {
 #custom-front-panel #custom-front-panel-content .top-site-block .h-top-social li[rel="g-plus"] a:hover {
   background: url("../images/icons/social_icons.png") -175px -70px;
 }
-/* line 317, ../sass/styles.scss */
-#custom-front-panel #custom-front-panel-content .top-site-block .h-top-social ul li a:hover,
-#custom-front-panel #custom-front-panel-content .top-site-block .h-top-social ul li a.active {
-  color: #d68caf;
-}
 /* line 326, ../sass/styles.scss */
 #custom-front-panel #custom-front-panel-content .pane-views-about-home-about h2 {
   text-align: center;
@@ -2426,11 +2421,6 @@ ul.pager li a {
 /* line 694, ../sass/styles.scss */
 #custom-front-panel .footer-contact .h-footer-social li[rel="g-plus"] a:hover {
   background: url("../images/icons/social_icons.png") -175px -70px;
-}
-/* line 698, ../sass/styles.scss */
-#custom-front-panel .footer-contact .h-footer-social ul li a:hover,
-#custom-front-panel .footer-contact .h-footer-social ul li a.active {
-  color: #d68caf;
 }
 /* line 704, ../sass/styles.scss */
 #custom-front-panel .news-top-text {
