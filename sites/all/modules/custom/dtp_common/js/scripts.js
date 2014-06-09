@@ -52,8 +52,8 @@
           $('ul.menu li a').removeClass('active');
           $(this).addClass('active');
           
-          $('html,body').animate({
-            scrollTop: target.offset().top - topBarHeight
+          $('html,body').stop().animate({
+            scrollTop: target.offset().top - topBarHeight - 50,
           }, 800);
           event.preventDefault();
         }
