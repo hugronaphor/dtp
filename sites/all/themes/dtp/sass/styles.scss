@@ -495,7 +495,7 @@ ul.pager {
       h2.pane-title {
         font-size: 25px;
         font-weight: normal;
-        padding-top: 20px;
+        padding-top: 45px;
       }
       .cercetare-list {
         ul {
@@ -1003,7 +1003,7 @@ ul.pager {
       }
       .superbox-current-img {
         max-width:100%;
-        padding: 0 20px 0 0;
+        padding: 0 20px 20px 0;
         display: block;
         float: left;
       }
@@ -1030,34 +1030,9 @@ ul.pager {
 
       .superbox-list {
         width:210px;
-        margin: -3px;
+        margin: -3px -1px -4px -3px;
       }
-
-
-      /*      @media only screen and (min-width: 320px) {
-              .superbox-list {
-                width:50%;
-              }
-            }
-            @media only screen and (min-width: 486px) {
-              .superbox-list {
-                width:25%;
-              }
-            }
-            @media only screen and (min-width: 768px) {
-              .superbox-list {
-                width:16.66666667%;
-              }
-            }
-            @media only screen and (min-width: 1025px) {
-              .superbox-list {
-                width:16.66666667%;
-              }
-            }*/
     }
-
-
-
   }
 
   .view-empty {

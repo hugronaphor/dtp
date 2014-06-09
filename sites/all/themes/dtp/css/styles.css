@@ -2234,7 +2234,7 @@ ul.pager li a {
 #custom-front-panel #custom-front-panel-content .pane-views-cercetare-home-cercetare h2.pane-title {
   font-size: 25px;
   font-weight: normal;
-  padding-top: 20px;
+  padding-top: 45px;
 }
 /* line 501, ../sass/styles.scss */
 #custom-front-panel #custom-front-panel-content .pane-views-cercetare-home-cercetare .cercetare-list ul {
@@ -2687,29 +2687,6 @@ ul.pager li a {
 #custom-front-panel .portfolio-top-content {
   text-align: center;
 }
-/* line 972, ../sass/styles.scss */
-#custom-front-panel .view-display-id-home_portfolio .view-content {
-  /*      @media only screen and (min-width: 320px) {
-          .superbox-list {
-            width:50%;
-          }
-        }
-        @media only screen and (min-width: 486px) {
-          .superbox-list {
-            width:25%;
-          }
-        }
-        @media only screen and (min-width: 768px) {
-          .superbox-list {
-            width:16.66666667%;
-          }
-        }
-        @media only screen and (min-width: 1025px) {
-          .superbox-list {
-            width:16.66666667%;
-          }
-        }*/
-}
 /* line 973, ../sass/styles.scss */
 #custom-front-panel .view-display-id-home_portfolio .view-content .superbox-list {
   display: inline-block;
@@ -2745,7 +2722,7 @@ ul.pager li a {
 /* line 1004, ../sass/styles.scss */
 #custom-front-panel .view-display-id-home_portfolio .view-content .superbox-current-img {
   max-width: 100%;
-  padding: 0 20px 0 0;
+  padding: 0 20px 20px 0;
   display: block;
   float: left;
 }
@@ -2776,24 +2753,24 @@ ul.pager li a {
 /* line 1031, ../sass/styles.scss */
 #custom-front-panel .view-display-id-home_portfolio .view-content .superbox-list {
   width: 210px;
-  margin: -3px;
+  margin: -3px -1px -4px -3px;
 }
-/* line 1063, ../sass/styles.scss */
+/* line 1038, ../sass/styles.scss */
 #custom-front-panel .view-empty {
   text-align: center;
 }
-/* line 1070, ../sass/styles.scss */
+/* line 1045, ../sass/styles.scss */
 #custom-front-panel .tabs-slider {
   position: relative;
 }
-/* line 1074, ../sass/styles.scss */
+/* line 1049, ../sass/styles.scss */
 #custom-front-panel .tabs-slider-container {
   height: 36px;
   overflow: hidden;
   margin: 35px 0;
   text-align: center;
 }
-/* line 1081, ../sass/styles.scss */
+/* line 1056, ../sass/styles.scss */
 #custom-front-panel .tabs-slider-item {
   font-size: 18px;
   font-family: 'ss', Arial, sans-serif;
@@ -2804,28 +2781,28 @@ ul.pager li a {
   cursor: pointer;
   display: inline-block;
 }
-/* line 1091, ../sass/styles.scss */
+/* line 1066, ../sass/styles.scss */
 #custom-front-panel .tabs-slider-item.active {
   padding: 0 15px;
   font-family: 'ss_bold', Arial, sans-serif;
   background: #00AEEF;
   color: white;
 }
-/* line 1097, ../sass/styles.scss */
+/* line 1072, ../sass/styles.scss */
 #custom-front-panel .tabs-slider-item:first-child {
   margin-left: 0;
 }
-/* line 1102, ../sass/styles.scss */
+/* line 1077, ../sass/styles.scss */
 #custom-front-panel .view-display-id-home_portfolio .views-exposed-form {
   display: none;
 }
 
-/* line 1108, ../sass/styles.scss */
+/* line 1083, ../sass/styles.scss */
 .layout-top-text {
   text-align: center;
 }
 
-/* line 1115, ../sass/styles.scss */
+/* line 1090, ../sass/styles.scss */
 .view-display-id-home_machetare .item-list > ul {
   text-align: center;
   padding: 0;
@@ -2834,7 +2811,7 @@ ul.pager li a {
   margin: 20px 0 0 0;
   width: 100%;
 }
-/* line 1122, ../sass/styles.scss */
+/* line 1097, ../sass/styles.scss */
 .view-display-id-home_machetare .item-list > ul li {
   padding: 0px;
   width: 131px;
@@ -2843,16 +2820,16 @@ ul.pager li a {
   list-style-type: none;
   vertical-align: top;
 }
-/* line 1124, ../sass/styles.scss */
+/* line 1099, ../sass/styles.scss */
 .view-display-id-home_machetare .item-list > ul li div {
   padding: 0;
 }
-/* line 1135, ../sass/styles.scss */
+/* line 1110, ../sass/styles.scss */
 .view-display-id-home_machetare .item-list > ul li .views-field-title {
   text-align: center;
 }
 
-/* line 1150, ../sass/styles.scss */
+/* line 1125, ../sass/styles.scss */
 .element {
   position: relative;
   top: 50%;
